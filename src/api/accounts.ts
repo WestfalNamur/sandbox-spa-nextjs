@@ -10,7 +10,8 @@ export const useGetAccounts = () => {
     fetch(accountsUrl).then((res) => res.json());
   const { isLoading, error, data } = useQuery("accounts", fetcher);
 
-  // Guard and return
+  // Guard
   const accounts = data && data.filter((account) => isAccount(account));
+
   return { isLoading, error, accounts };
 };
