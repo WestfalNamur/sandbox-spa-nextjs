@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write . --loglevel error",
-    "qc": "clear && tsc && npm run prettier && npm run lint"
+    "qc": "clear && tsc && npm run prettier && npm run lint",
+    "test": "clear && npx playwright test"
   },
   "dependencies": {
     "next": "13.0.0",
@@ -17,6 +18,7 @@
     "react-query": "^3.39.2"
   },
   "devDependencies": {
+    "@playwright/test": "^1.27.1",
     "@types/node": "18.11.7",
     "@types/react": "18.0.24",
     "@types/react-dom": "18.0.8",
