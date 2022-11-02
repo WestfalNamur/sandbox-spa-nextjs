@@ -4,9 +4,9 @@ name: Quality assurance
 # When does the workflow gets triggered?
 on:
   push:
-    branches: [main, master]
+    branches: [main, dev]
   pull_request:
-    branches: [main, master]
+    branches: [main, dev]
 
 
 # Enviroment variables that can be referenced with ${{env.SANDBOX_DB_NAME}} in steps.

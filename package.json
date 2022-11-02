@@ -10,7 +10,8 @@
     "prettier": "prettier --write . --loglevel error",
     "qc": "clear && tsc && npm run prettier && npm run lint",
     "test": "clear && jest",
-    "e2e": "clear && npx playwright test"
+    "e2e": "clear && npx playwright test",
+    "qcAndTest": "clear && tsc && npm run prettier && npm run lint && jest && npx playwright test"
   },
   "dependencies": {
     "next": "13.0.0",
