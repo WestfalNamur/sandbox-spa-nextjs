@@ -8,10 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write . --loglevel error",
-    "qc": "clear && tsc && npm run prettier && npm run lint",
+    "check": "clear && tsc && npm run prettier && npm run lint",
     "test": "clear && jest",
-    "e2e": "clear && npx playwright test",
-    "qcAndTest": "clear && tsc && npm run prettier && npm run lint && jest && npx playwright test"
+    "qc": "clear && tsc && npm run prettier && npm run lint && jest"
   },
   "dependencies": {
     "next": "13.0.0",
@@ -26,6 +25,8 @@
     "autoprefixer": "^10.4.13",
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.0",
+    "jest": "28.1.0",
+    "jest-environment-jsdom": "28.1.0",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.2.1",
     "typescript": "4.8.4",
@@ -33,6 +34,7 @@
     "@testing-library/react": "13.2.0",
     "@testing-library/user-event": "14.2.0",
     "jest": "28.1.0",
-    "jest-environment-jsdom": "28.1.0"
+    "jest-environment-jsdom": "28.1.0",
+    "typescript": "4.8.4"
   }
 }
